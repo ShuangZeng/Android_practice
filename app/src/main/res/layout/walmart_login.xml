@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+     >
+
+<!--    <ImageView-->
+<!--        android:id="@+id/logo"-->
+<!--        android:src="mipmap/wmtlogo"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        />-->
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/allerta"
+        android:text="Sign in to your account"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textColor="#5C5151"
+        android:textSize="25dp"
+        android:gravity="center"
+         android:layout_margin="30dp"
+        />
+
+    <GridLayout
+        android:id="@+id/GridLayout1"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/shape"
+        android:columnCount="4"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:rowCount="10">
+        <!--        <shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--            android:shape="rectangle">-->
+        <!--            &lt;!&ndash;背景色&ndash;&gt;-->
+        <!--            <solid android:color="@android:color/white" />-->
+        <!--            &lt;!&ndash;边框线&ndash;&gt;-->
+        <!--            <stroke-->
+        <!--                android:width="1dp"-->
+        <!--                android:color="@android:color/darker_gray" />-->
+        <!--            &lt;!&ndash;圆角&ndash;&gt;-->
+        <!--            <corners android:radius="4dp" />-->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:layout_gravity="left"
+            android:text="Email address (required)"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_row = "1"
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_row = "2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Password (required)"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_row = "3"
+            android:id="@+id/psw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_row = "4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:autoLink="all"
+            android:clickable="true"
+            android:text="Forgot password?" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_row = "5"/>
+
+        <Button
+            android:layout_row = "6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#394CF3"
+            android:text="Sign In"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_row = "7"/>
+        <TextView
+            android:layout_row = "8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Don't have an account?"
+            />
+        <Button
+            android:layout_row = "9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="Create an account"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#394CF3"
+            android:textSize="24sp" />
+            />
+    </GridLayout>
+<!--    </RelativeLayout>-->
+</LinearLayout>

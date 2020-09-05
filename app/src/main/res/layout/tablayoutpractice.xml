@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    tools:context=".TablePracticeActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#3F51B5"
+        android:fontFamily="monospace"
+        android:text="Table Layout Test"
+        android:textColor="#ECF8F5"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/txtVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Android Version"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtCodeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Code Name"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnAddVC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD" />
+
+
+    <TableLayout
+        android:id="@+id/tablePractice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4BCE8"
+            android:divider="@android:color/holo_red_dark">
+
+            <TextView
+                android:id="@+id/versionDisplay"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/codeNameDisplay"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+
+    </TableLayout>
+</LinearLayout>
